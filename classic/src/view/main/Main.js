@@ -89,11 +89,11 @@ Ext.define('TutorialApp.view.main.Main', {
             html: '{loremIpsum}'
         }
     }, {
-        title: 'Groups',
+        title: 'Food',
         iconCls: 'fa-warning',
-        bind: {
-            html: '{otherData}'
-        }
+        items: [{
+            xtype: 'foodList'
+        }]
     }, {
         title: 'Settings',
         iconCls: 'fa-cog',
@@ -103,5 +103,8 @@ Ext.define('TutorialApp.view.main.Main', {
     }, {
         title: 'Login',
         iconCls: 'fa-user',
+        items: [{
+            xtype: 'login-form'
+        }]
     }]
 });
