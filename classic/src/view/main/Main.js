@@ -79,7 +79,7 @@ Ext.define('TutorialApp.view.main.Main', {
         title: 'Home',
         iconCls: 'fa-home',
         // The following grid shares a store with the classic version's grid as well!
-        items: [{
+        items: [{ 
             xtype: 'mainlist'
         }]
     }, {
@@ -98,7 +98,10 @@ Ext.define('TutorialApp.view.main.Main', {
         title: 'Settings',
         iconCls: 'fa-cog',
         bind: {
-            html: '{loremIpsum}'
+            html: '{settings}'
         }
+    }, {
+        title: 'Login',
+        iconCls: 'fa-user',
     }]
 });

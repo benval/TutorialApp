@@ -11,7 +11,10 @@ Ext.define('TutorialApp.view.main.MainModel', {
 
         loremIpsum: ' Vet ikke helt hva dette skal være godt for.',
 
-        otherData: 'Litt mer åpenbart nå'
+        otherData: 'Litt mer åpenbart nå',
+
+        settings: 'burde kanskje ha noe mer her',
+
     }
 
     //TODO - add data, formulas and/or methods to support your view
