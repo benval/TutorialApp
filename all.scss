@@ -1,0 +1,6 @@
+//Attempt at creating global base color rule
+
+
+@include all(
+    $base-color: #87BD3e dynamic()
+);

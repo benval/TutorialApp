@@ -37,7 +37,7 @@ Ext.define('TutorialApp.view.main.Main', {
             },
             flex: 0
         },
-        iconCls: 'fa-th-list'
+        iconCls: 'fa-tasks'
     },
 
     tabBar: {
@@ -79,7 +79,7 @@ Ext.define('TutorialApp.view.main.Main', {
         title: 'Home',
         iconCls: 'fa-home',
         // The following grid shares a store with the classic version's grid as well!
-        items: [{
+        items: [{ 
             xtype: 'mainlist'
         }]
     }, {
@@ -89,16 +89,22 @@ Ext.define('TutorialApp.view.main.Main', {
             html: '{loremIpsum}'
         }
     }, {
-        title: 'Groups',
-        iconCls: 'fa-users',
-        bind: {
-            html: '{loremIpsum}'
-        }
+        title: 'Food',
+        iconCls: 'fa-warning',
+        items: [{
+            xtype: 'foodList'
+        }]
     }, {
         title: 'Settings',
         iconCls: 'fa-cog',
         bind: {
-            html: '{loremIpsum}'
+            html: '{settings}'
         }
+    }, {
+        title: 'Login',
+        iconCls: 'fa-user',
+        items: [{
+            xtype: 'login-form'
+        }]
     }]
 });
