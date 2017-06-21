@@ -37,7 +37,7 @@ Ext.define('TutorialApp.view.main.Main', {
             },
             flex: 0
         },
-        iconCls: 'fa-th-list'
+        iconCls: 'fa-tasks'
     },
 
     tabBar: {
@@ -90,9 +90,9 @@ Ext.define('TutorialApp.view.main.Main', {
         }
     }, {
         title: 'Groups',
-        iconCls: 'fa-users',
+        iconCls: 'fa-warning',
         bind: {
-            html: '{loremIpsum}'
+            html: '{otherData}'
         }
     }, {
         title: 'Settings',

@@ -18,7 +18,9 @@ Ext.define('TutorialApp.view.main.List', {
     columns: [
         { text: 'Name',  dataIndex: 'name' },
         { text: 'Email', dataIndex: 'email', flex: 1 },
-        { text: 'Phone', dataIndex: 'phone', flex: 1 }
+        { text: 'Phone', dataIndex: 'phone', flex: 1 },
+        { text: 'Age', dataIndex: 'age', flex: 1 },
+        { text: 'Gender', dataIndex: 'gender', flex: 1 }
     ],
 
     listeners: {
